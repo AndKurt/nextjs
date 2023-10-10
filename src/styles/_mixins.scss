@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+// Media queries
+@mixin responsive($media) {
+    @if $media = phone-s {
+        @media only screen and (max-width: v.$mobile-s) {
+            @content;
+        }
+    } @else if $media = phone-l {
+        @media only screen and (min-width: (v.$mobile-s + 1px)) and (max-width: v.$mobile-l) {
+            @content;
+        }
+    } @else if $media = tablet {
+        @media only screen and (min-width: (v.$mobile-l + 1px)) and (max-width: v.$tablet) {
+            @content;
+        }
+    } @else if $media = desktop {
+        @media only screen and (min-width: ($tablet + 1px)) and (max-width-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+// Base wrapper
+@mixin wrapper {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
