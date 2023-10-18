@@ -1,0 +1,21 @@
+.header {
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background: $color-content;
+    max-width: 1400px;
+    width: 100%;
+    padding: 44px;
+
+    @include responsive(tablet) {
+    }
+
+    .logo {
+        background-color: red;
+        display: flex;
+    }
+}

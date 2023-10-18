@@ -1,24 +1,19 @@
 {
-    "singleQuote": true,
-    "printWidth": 100,
-    "tabWidth": 4,
-    "arrowParens": "avoid",
-    "singleAttributePerLine": true,
-    "overrides": [
-        {
-            "files": ["*.yml", "*.yaml"],
-            "options": {
-                "tabWidth": 2,
-                "singleQuote": false
-            }
-        }
-    ],
-    "importOrder": [
-        "<THIRD_PARTY_MODULES>",
-        "^@internal/(.*)$",
-        "^[./].*(?<!\\.(c|le|sc)ss)$",
-        "^[.]/[-a-zA-Z0-9_]+[.](module)[.](css|scss|less)$"
-    ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true
+  "singleQuote": false,
+  "jsxSingleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "arrowParens": "avoid",
+  "singleAttributePerLine": true,
+  "overrides": [
+    {
+      "files": ["*.yml", "*.yaml"],
+      "options": {
+        "tabWidth": 2,
+        "singleQuote": false
+      }
+    }
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
