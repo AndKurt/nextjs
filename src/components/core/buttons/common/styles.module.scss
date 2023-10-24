@@ -1,0 +1,26 @@
+.commonButton {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 23px 0;
+    width: 100%;
+
+    &.primary {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &.white {
+        background-color: $color-white;
+        color: $color-primary;
+    }
+
+    &.secondary {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+
+    &.rightAddon {
+        margin-left: 10px;
+    }
+}

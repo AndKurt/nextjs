@@ -1,0 +1,41 @@
+.logo {
+    display: flex;
+    align-items: flex-end;
+    font-size: $size-heading-h3;
+    font-weight: 700;
+    color: $color-primary;
+    gap: 15px;
+
+    &__img {
+        width: 81px;
+        aspect-ratio: 1.35;
+        position: relative;
+    }
+
+    @include responsive(tablet) {
+        font-size: $size-heading-h5;
+        gap: 10px;
+
+        &__img {
+            width: 70px;
+        }
+    }
+
+    @include responsive(mobile-l) {
+        font-size: $size-heading-h5;
+        gap: 10px;
+
+        &__img {
+            width: 60px;
+        }
+    }
+
+    @include responsive(mobile-s) {
+        font-size: $size-heading-h6;
+        gap: 10px;
+
+        &__img {
+            width: 50px;
+        }
+    }
+}

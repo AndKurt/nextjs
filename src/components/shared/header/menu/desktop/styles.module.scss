@@ -1,0 +1,46 @@
+.list {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+
+    @include responsive(mobile-l) {
+        display: none;
+    }
+
+    @include responsive(mobile-s) {
+        display: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        color: $color-header-link;
+
+        &:active,
+        :hover {
+            transition: 0.7s;
+
+            color: $color-primary;
+        }
+
+        @include responsive(tablet) {
+            margin-right: 10px;
+        }
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    & .button {
+        margin-left: 60px;
+
+        @include responsive(tablet) {
+            margin-left: 25px;
+        }
+    }
+}

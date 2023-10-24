@@ -10,12 +10,33 @@
     max-width: 1400px;
     width: 100%;
     padding: 44px;
+    background: $color-white;
+    align-items: center;
 
     @include responsive(tablet) {
+        padding: 44px 15px;
+    }
+    @include responsive(mobile-l) {
+        position: relative;
+        top: 0;
+        padding: 30px 15px;
+    }
+    @include responsive(mobile-s) {
+        position: relative;
+        top: 0;
+        padding: 20px 15px;
     }
 
-    .logo {
-        background-color: red;
+    .navigation {
         display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+        @include responsive(tablet) {
+            gap: 20px;
+        }
+        @include responsive(mobile-l) {
+            gap: 15px;
+        }
     }
 }

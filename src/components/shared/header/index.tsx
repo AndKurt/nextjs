@@ -1,22 +1,20 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
 
-import cn from './styles.module.scss';
+import { Logo } from "@/components";
+import { MenuList } from "@/constants";
+
+import { DesktopMenu, MobileMenu } from "./menu";
+
+import cn from "./styles.module.scss";
 
 export const Header = () => {
     return (
         <header className={cn.header}>
-            <Link
-                href="/"
-                className={cn.logo}
-            >
-                <Image
-                    src={''}
-                    alt="logo"
-                />
-                Modsen ProperLand
-            </Link>
+            <Logo />
+            <nav className={cn.navigation}>
+                <DesktopMenu options={MenuList} />
+                <MobileMenu options={MenuList} />
+            </nav>
         </header>
     );
 };
