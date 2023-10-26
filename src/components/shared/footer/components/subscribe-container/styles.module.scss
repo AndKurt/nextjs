@@ -1,0 +1,36 @@
+.subscribeContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 636px;
+    width: 100%;
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+
+        @include responsive(mobile-l) {
+            margin-bottom: 15px;
+        }
+        @include responsive(mobile-l) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .emailBlock {
+        display: flex;
+        gap: 25px;
+        width: 100%;
+        justify-content: space-between;
+
+        .emailInput {
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #c0c0c0;
+            padding: 25px;
+        }
+    }
+}

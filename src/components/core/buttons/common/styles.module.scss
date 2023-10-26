@@ -1,9 +1,10 @@
 .commonButton {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 5px;
     padding: 23px 0;
-    width: 100%;
+    text-wrap: nowrap;
 
     &.primary {
         background-color: $color-primary;

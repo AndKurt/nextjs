@@ -1,0 +1,103 @@
+// Font weight
+.bold {
+    font-weight: 700;
+}
+
+.medium {
+    font-weight: 400;
+}
+
+//Font color
+.white {
+    color: $color-white;
+}
+.primary {
+    color: $color-primary;
+}
+.content {
+    color: $color-content;
+}
+.secondary {
+    color: $color-secondary;
+}
+.link {
+    color: $color-link;
+}
+.border {
+    color: $color-border;
+}
+
+//Font size
+.size45 {
+    font-size: 45px;
+
+    @include responsive(tablet) {
+        font-size: 40px;
+    }
+    @include responsive(mobile-l) {
+        font-size: 35px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 30px;
+    }
+}
+.size40 {
+    font-size: 40px;
+
+    @include responsive(tablet) {
+        font-size: 35px;
+    }
+    @include responsive(mobile-l) {
+        font-size: 30px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 25px;
+    }
+}
+.size35 {
+    font-size: 35px;
+
+    @include responsive(tablet) {
+        font-size: 30px;
+    }
+    @include responsive(mobile-l) {
+        font-size: 25px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 20px;
+    }
+}
+.size30 {
+    font-size: 30px;
+
+    @include responsive(tablet) {
+        font-size: 25px;
+    }
+    @include responsive(mobile-l) {
+        font-size: 20px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 16px;
+    }
+}
+.size25 {
+    font-size: 25px;
+    @include responsive(tablet) {
+        font-size: 20px;
+    }
+    @include responsive(mobile-l) {
+        font-size: 16px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 16px;
+    }
+}
+.size20 {
+    font-size: 20px;
+    @include responsive(mobile-l) {
+        font-size: 16px;
+    }
+    @include responsive(mobile-s) {
+        font-size: 16px;
+    }
+}

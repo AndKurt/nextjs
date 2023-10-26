@@ -16,6 +16,7 @@ export const CommonButton: FC<IProps> = ({
     color = "primary",
     sidePadding = 23,
     className,
+    type = "button",
 }) => {
     const colorClassName = sesColorClassName(color);
     const buttonClasses = clsx(colorClassName, cn.commonButton, className);
@@ -24,6 +25,7 @@ export const CommonButton: FC<IProps> = ({
         <button
             className={clsx(!link && buttonClasses)}
             style={{ paddingLeft: `${sidePadding}px`, paddingRight: `${sidePadding}px` }}
+            type={type}
             onClick={onClick}
         >
             {text}

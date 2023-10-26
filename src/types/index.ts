@@ -1,4 +1,2 @@
-export type TMenuList = {
-  name: string;
-  link: string;
-};
+export * from "./constants";
+export * from "./common";

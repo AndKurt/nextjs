@@ -1,4 +1,4 @@
-import { TColors } from "./types";
+import { TColors } from "@/types";
 
 import cn from "./styles.module.scss";
 
