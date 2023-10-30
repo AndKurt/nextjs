@@ -1,4 +1,4 @@
-export type TMenuList = {
+export type TMenuItem = {
     name: string;
     link: string;
 };
@@ -10,3 +10,9 @@ type TSocial = {
 };
 
 export type TSocialList = TSocial[];
+
+type TFastLinkGroup = {
+    title: string;
+    items: TMenuItem[];
+};
+export type TFastLinks = TFastLinkGroup[];

@@ -4,7 +4,7 @@ import React, { FC, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 
 import { CommonButton } from "@/components/core";
-import { TMenuList } from "@/types";
+import { TMenuItem } from "@/types";
 
 import { BurgerButton } from "./burger-button";
 
@@ -13,7 +13,7 @@ import cn from "./styles.module.scss";
 import clsx from "clsx";
 
 type TProps = {
-    options: TMenuList[];
+    options: TMenuItem[];
 };
 
 export const MobileMenu: FC<TProps> = ({ options }) => {

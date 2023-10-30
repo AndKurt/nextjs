@@ -1,6 +1,6 @@
-import { TMenuList } from "@/types";
+import { TMenuItem } from "@/types";
 
-export const MenuList: TMenuList[] = [
+export const MenuList: TMenuItem[] = [
     {
         name: "Home",
         link: "/",

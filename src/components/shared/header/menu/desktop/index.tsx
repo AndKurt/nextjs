@@ -2,12 +2,12 @@ import Link from "next/link";
 import React, { FC } from "react";
 
 import { CommonButton } from "@/components/core";
-import { TMenuList } from "@/types";
+import { TMenuItem } from "@/types";
 
 import cn from "./styles.module.scss";
 
 type TProps = {
-    options: TMenuList[];
+    options: TMenuItem[];
 };
 
 export const DesktopMenu: FC<TProps> = ({ options }) => {
