@@ -1,0 +1,28 @@
+.socialsContainer {
+    display: flex;
+    max-width: 696px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include responsive(mobile-s) {
+        justify-content: space-around;
+    }
+
+    .linksContainer {
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .list {
+            .item {
+                margin-bottom: 14px;
+
+                @include responsive(mobile-s) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

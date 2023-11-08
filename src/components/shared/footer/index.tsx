@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Copyright, SocialsContainer, SubscribeContainer } from "./components";
+import {
+    ContactsContainer,
+    Copyright,
+    FastLinksContainer,
+    SocialsContainer,
+    SubscribeContainer,
+} from "./components";
 
 import cn from "./styles.module.scss";
 
@@ -14,11 +20,11 @@ export const Footer = () => {
                     <SocialsContainer />
                     <SubscribeContainer />
                 </div>
-                <div>
-                    <section className={cn.fastLinksContainer}></section>
-                    <section className={cn.contactContainer}></section>
+                <div className={clsx(cn.section, cn.firstSection)}>
+                    <FastLinksContainer />
+                    <ContactsContainer />
                 </div>
-                <Copyright/>
+                <Copyright />
             </div>
         </footer>
     );

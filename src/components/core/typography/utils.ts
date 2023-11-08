@@ -44,9 +44,11 @@ export const setFontWeightClassName = (weight: TFontWeight) => {
     switch (weight) {
         case "bold":
             return cn.bold;
-        case "medium":
-            return cn.medium;
+        case "semi-bold":
+            return cn.semiBold;
+        case "thin":
+            return cn.thin;
         default:
-            return cn.medium;
+            return cn.bold;
     }
 };

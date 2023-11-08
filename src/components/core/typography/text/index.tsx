@@ -24,7 +24,7 @@ export const Text: FC<PropsWithChildren<TProps>> = ({
     className,
     color = "border",
     tag = "p",
-    weight = "medium",
+    weight = "thin",
     font = "sans3",
     size = 20,
 }) => {
