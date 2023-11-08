@@ -20,7 +20,7 @@ export const Footer = () => {
                     <SocialsContainer />
                     <SubscribeContainer />
                 </div>
-                <div className={clsx(cn.section, cn.firstSection)}>
+                <div className={clsx(cn.section, cn.secondSection)}>
                     <FastLinksContainer />
                     <ContactsContainer />
                 </div>

@@ -47,12 +47,14 @@ export const MobileMenu: FC<TProps> = ({ options }) => {
                             <Link href={link}>{name}</Link>
                         </li>
                     ))}
-                    <CommonButton
-                        className={cn.button}
-                        link='/contact'
-                        sidePadding={20}
-                        text='Contact'
-                    />
+                    <li>
+                        <CommonButton
+                            className={cn.button}
+                            link='/contact'
+                            sidePadding={20}
+                            text='Contact'
+                        />
+                    </li>
                 </ul>
             </div>
         </div>

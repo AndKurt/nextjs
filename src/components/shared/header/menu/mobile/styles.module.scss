@@ -65,11 +65,13 @@
         .show {
             opacity: 1;
             left: 0;
+            visibility: visible;
         }
 
         .hide {
             opacity: 0;
             left: 100%;
+            visibility: hidden;
         }
     }
 }
