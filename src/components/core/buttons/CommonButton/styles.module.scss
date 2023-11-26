@@ -5,6 +5,19 @@
     border-radius: 5px;
     padding: 23px 0;
     text-wrap: nowrap;
+    transition: all 0.3s ease-in-out;
+
+    button {
+        display: flex;
+        justify-content: center;
+    }
+
+    &:hover {
+        transform: translate(2px);
+        transform: scale(0.95);
+        color: #fff;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    }
 
     &.primary {
         background-color: $color-primary;
@@ -21,7 +34,7 @@
         color: $color-primary;
     }
 
-    &.rightAddon {
+    .rightAddon {
         margin-left: 10px;
     }
 }

@@ -32,75 +32,81 @@
 
 //Font size
 .size45 {
-    font-size: 45px;
+    font-size: $size-heading-h1;
 
     @include responsive(tablet) {
-        font-size: 40px;
+        font-size: $size-heading-h2;
     }
     @include responsive(mobile-l) {
-        font-size: 35px;
+        font-size: $size-heading-h3;
     }
     @include responsive(mobile-s) {
-        font-size: 30px;
+        font-size: $size-heading-h4;
     }
 }
 .size40 {
-    font-size: 40px;
+    font-size: $size-heading-h2;
 
     @include responsive(tablet) {
-        font-size: 35px;
+        font-size: $size-heading-h3;
     }
     @include responsive(mobile-l) {
-        font-size: 30px;
+        font-size: $size-heading-h4;
     }
     @include responsive(mobile-s) {
         font-size: 25px;
     }
 }
 .size35 {
-    font-size: 35px;
+    font-size: $size-heading-h3;
 
     @include responsive(tablet) {
-        font-size: 30px;
+        font-size: $size-heading-h4;
     }
     @include responsive(mobile-l) {
-        font-size: 25px;
+        font-size: $size-heading-h5;
     }
     @include responsive(mobile-s) {
-        font-size: 20px;
+        font-size: $size-heading-h6;
     }
 }
 .size30 {
-    font-size: 30px;
+    font-size: $size-heading-h4;
 
     @include responsive(tablet) {
-        font-size: 25px;
+        font-size: $size-heading-h5;
     }
     @include responsive(mobile-l) {
-        font-size: 20px;
+        font-size: $size-heading-h6;
     }
     @include responsive(mobile-s) {
-        font-size: 16px;
+        font-size: $size-16;
     }
 }
 .size25 {
-    font-size: 25px;
+    font-size: $size-heading-h5;
+
     @include responsive(tablet) {
-        font-size: 20px;
+        font-size: $size-heading-h6;
     }
     @include responsive(mobile-l) {
-        font-size: 16px;
+        font-size: $size-16;
     }
     @include responsive(mobile-s) {
-        font-size: 16px;
+        font-size: $size-16;
     }
 }
 .size20 {
-    font-size: 20px;
+    font-size: $size-heading-h6;
+
     @include responsive(mobile-l) {
-        font-size: 16px;
+        font-size: $size-16;
     }
     @include responsive(mobile-s) {
-        font-size: 16px;
+        font-size: $size-16;
     }
+}
+
+.upperCase {
+    text-transform: uppercase;
 }

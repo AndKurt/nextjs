@@ -1,6 +1,6 @@
 import { TContacts, TFastLinks, TMenuItem, TSocialList } from "@/types";
 
-import { ContactIcons, socialIcons } from "../../../public/icons";
+import { ContactIcons, socialIcons } from "../../../public";
 
 export const SocialsList: TSocialList = [
     {

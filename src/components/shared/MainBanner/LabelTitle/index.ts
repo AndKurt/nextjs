@@ -1,0 +1,1 @@
+export { LabelTitle } from "./LabelTitle";

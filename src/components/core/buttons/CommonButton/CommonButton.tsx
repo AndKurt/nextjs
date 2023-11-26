@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 
@@ -29,7 +30,13 @@ export const CommonButton: FC<IProps> = ({
             onClick={onClick}
         >
             {text}
-            {rightAddon && <div className={cn.rightAddon}>{rightAddon}</div>}
+            {rightAddon && (
+                <Image
+                    alt='addon-img'
+                    className={cn.rightAddon}
+                    src={rightAddon}
+                />
+            )}
         </button>
     );
 
