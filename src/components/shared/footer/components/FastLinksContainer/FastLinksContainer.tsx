@@ -2,14 +2,14 @@ import Link from "next/link";
 import React from "react";
 
 import { Text, Title } from "@/components/core";
-import { FastLinks } from "@/constants";
+import { FAST_LINKS } from "@/constants";
 
 import cn from "./styles.module.scss";
 
 export const FastLinksContainer = () => {
     return (
         <section className={cn.socialsContainer}>
-            {FastLinks.map(({ title, items }) => (
+            {FAST_LINKS.map(({ title, items }) => (
                 <div
                     className={cn.linksContainer}
                     key={title}

@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 import { Text } from "@/components/core";
 
-import { CommonIcons } from "../../../../../public";
+import { COMMON_ICONS } from "../../../../../public";
 
 import { IProps } from "./types";
 
@@ -14,7 +14,7 @@ export const LabelTitle: FC<IProps> = ({ labelTitle }) => {
         <div className={cn.labelTitle}>
             <Image
                 alt='label-image'
-                src={CommonIcons.home}
+                src={COMMON_ICONS.home}
             />
             <Text
                 className={cn.title}

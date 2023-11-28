@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export type IProps = {
-    backgroundImg: string;
+    backgroundImg: StaticImageData;
     labelTitle: string;
     title: string;
     text?: string;

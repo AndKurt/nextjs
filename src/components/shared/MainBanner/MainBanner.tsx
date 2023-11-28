@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 import { CommonButton, Text, Title } from "@/components";
 
-import { BannerImages, CommonIcons } from "../../../../public";
+import { BannerImages, COMMON_ICONS } from "../../../../public";
 
 import { LabelTitle } from "./LabelTitle";
 import { IProps } from "./types";
@@ -21,7 +21,7 @@ export const MainBanner: FC<IProps> = ({ backgroundImg, labelTitle, title, text 
                     <CommonButton
                         color='white'
                         link='/'
-                        rightAddon={CommonIcons.yellowArrow}
+                        rightAddon={COMMON_ICONS.yellowArrow}
                         text='Explore Property'
                     />
                 </div>

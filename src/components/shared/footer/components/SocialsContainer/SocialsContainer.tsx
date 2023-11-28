@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 import { Logo } from "@/components";
-import { SocialsList } from "@/constants";
+import { SOCIAL_LIST } from "@/constants";
 
 import cn from "./styles.module.scss";
 
@@ -12,7 +12,7 @@ export const SocialsContainer = () => {
         <section className={cn.socialsContainer}>
             <Logo className={cn.logo} />
             <div className={cn.socialsBlock}>
-                {SocialsList.map(({ img, alt, link }) => (
+                {SOCIAL_LIST.map(({ img, alt, link }) => (
                     <Link
                         href={link}
                         key={alt}

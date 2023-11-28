@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Logo } from "@/components";
-import { MenuList } from "@/constants";
+import { MENU_LIST } from "@/constants";
 
 import { DesktopMenu, MobileMenu } from "./Menu";
 
@@ -12,8 +12,8 @@ export const Header = () => {
         <header className={cn.header}>
             <Logo />
             <nav className={cn.navigation}>
-                <DesktopMenu options={MenuList} />
-                <MobileMenu options={MenuList} />
+                <DesktopMenu options={MENU_LIST} />
+                <MobileMenu options={MENU_LIST} />
             </nav>
         </header>
     );

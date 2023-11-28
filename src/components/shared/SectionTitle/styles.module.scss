@@ -1,0 +1,22 @@
+.sectionTitle {
+    text-transform: uppercase;
+    line-height: $size-heading-h6;
+    height: $size-heading-h6;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+
+    .stick {
+        width: 2px;
+        height: 16px;
+        background: $color-primary;
+
+        &:first-of-type {
+            margin-right: 9px;
+        }
+
+        &:last-of-type {
+            margin-left: 7px;
+        }
+    }
+}
