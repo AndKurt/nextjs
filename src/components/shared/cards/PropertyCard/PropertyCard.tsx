@@ -62,7 +62,7 @@ export const PropertyCard: FC<TProps> = ({
                 />
                 <Text color='content'>{address}</Text>
             </div>
-            <div className={cn.aligner}>
+            <div className={clsx(cn.aligner, cn.mobileAligner)}>
                 {INFO_DATA.map(({ img, text }) => (
                     <InfoPlate
                         img={img}

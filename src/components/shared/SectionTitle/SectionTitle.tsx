@@ -6,10 +6,12 @@ import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const SectionTitle: FC<TProps> = ({ sectionNumber, title }) => {
+import clsx from "clsx";
+
+export const SectionTitle: FC<TProps> = ({ sectionNumber, title, className }) => {
     return (
         <Text
-            className={cn.sectionTitle}
+            className={clsx(cn.sectionTitle, className)}
             color='primary'
             tag='div'
         >
