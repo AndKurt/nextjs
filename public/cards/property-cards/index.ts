@@ -5,7 +5,7 @@ import property_4 from "./property_4.png";
 import property_5 from "./property_5.png";
 import property_6 from "./property_6.png";
 
-export const PropertyCardImage = {
+export const PROPERTY_CARD_IMG = {
     property_1,
     property_2,
     property_3,

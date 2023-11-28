@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React, { FC } from "react";
 
-import { Text } from "@/components/core";
-
-import { COMMON_ICONS } from "../../../../../public";
+import { Text } from "@/components";
+import { COMMON_ICONS } from "@public";
 
 import { IProps } from "./types";
 

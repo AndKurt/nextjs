@@ -1,2 +1,2 @@
 export { PropertyCard } from "./PropertyCard";
-export * from "./types";
+export type { TProps as TPropertyCards } from "./types";

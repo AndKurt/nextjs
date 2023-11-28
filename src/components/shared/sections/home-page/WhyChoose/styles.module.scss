@@ -1,31 +1,26 @@
-.featuredProperties {
+.whyChoose {
     display: flex;
     justify-content: center;
-    background-color: #f5f1ef;
-    padding-top: 188px;
-    padding-bottom: 358px;
+    padding-top: 313px;
+    padding-bottom: 151px;
     position: relative;
 
-    &::before {
-    }
-
     @include responsive(tablet) {
-        padding-top: 100px;
-        padding-bottom: 250px;
+        padding-top: 200px;
+        padding-bottom: 110px;
     }
     @include responsive(mobile-l) {
-        padding-top: 80px;
-        padding-bottom: 160px;
+        padding-top: 160px;
+        padding-bottom: 90px;
     }
 
     @include responsive(mobile-s) {
-        padding-top: 60px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .wrapper {
         @include wrapper;
-        z-index: 1;
 
         .container {
             display: flex;
@@ -36,8 +31,9 @@
 
             .title {
                 margin-bottom: 46px;
-                max-width: 609px;
+                max-width: 700px;
                 text-align: center;
+                text-transform: capitalize;
 
                 @include responsive(mobile-l) {
                     margin-bottom: 30px;
@@ -55,9 +51,6 @@
                 width: 100%;
                 flex-wrap: wrap;
 
-                @include responsive(desktop) {
-                }
-
                 @include responsive(tablet) {
                     gap: 30px;
                 }
@@ -70,31 +63,6 @@
                     gap: 16px;
                 }
             }
-        }
-    }
-
-    .decoration {
-        position: absolute;
-        bottom: 0;
-        max-width: 754px;
-        width: 100%;
-        height: 487px;
-        border-top-left-radius: 50% 80%;
-        border-top-right-radius: 50% 80%;
-        background: linear-gradient(180deg, #f2ded4 0%, rgba(255, 255, 255, 0) 299.89%);
-        z-index: 0;
-
-        @include responsive(tablet) {
-            gap: 70px;
-        }
-        @include responsive(mobile-l) {
-            width: 60%;
-            height: 200px;
-        }
-
-        @include responsive(mobile-s) {
-            width: 50%;
-            height: 100px;
         }
     }
 }

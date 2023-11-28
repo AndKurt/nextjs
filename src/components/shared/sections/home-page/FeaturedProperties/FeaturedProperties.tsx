@@ -11,7 +11,7 @@ export const FeaturedProperties = () => {
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
-                        sectionNumber='01'
+                        sectionNumber='02'
                         title='Featured properties'
                     />
                     <Title className={cn.title}>Properties for sale in your favorite area</Title>

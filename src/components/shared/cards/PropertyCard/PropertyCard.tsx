@@ -2,8 +2,7 @@ import Image from "next/image";
 import React, { FC, useMemo } from "react";
 
 import { CommonButton, Text, Title } from "@/components/core";
-
-import { COMMON_ICONS } from "../../../../../public/";
+import { COMMON_ICONS } from "@public";
 
 import { InfoPlate } from "./InfoPlate/InfoPlate";
 import { TProps } from "./types";
@@ -11,7 +10,6 @@ import { TProps } from "./types";
 import cn from "./styles.module.scss";
 
 import clsx from "clsx";
-
 export const PropertyCard: FC<TProps> = ({
     image,
     title,

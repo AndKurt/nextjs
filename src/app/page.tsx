@@ -1,6 +1,5 @@
-import { FeaturedProperties, MainBanner } from "@/components";
-
-import { BannerImages } from "../../public";
+import { FeaturedProperties, MainBanner, WhyChoose } from "@/components";
+import { BannerImages } from "@public";
 
 export default function Home() {
     return (
@@ -13,6 +12,7 @@ export default function Home() {
             />
             <section>Buying & Selling Property In An Easy Way</section>
             <FeaturedProperties />
+            <WhyChoose />
             <section>Why Choose Our Properties Of Real Estate Industries</section>
             <section>42+ years of helping you find the right Propertys</section>
         </>

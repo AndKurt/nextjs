@@ -1,0 +1,46 @@
+.chooseCard {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 41px;
+    border-radius: 5px;
+    background: linear-gradient(143deg, #f3d1c1 2.44%, #ffeee5 98.38%);
+    max-width: 441px;
+    width: 100%;
+    position: relative;
+
+    @include responsive(mobile-l) {
+        padding: 30px;
+    }
+
+    @include responsive(mobile-s) {
+        padding: 24px;
+    }
+
+    .fullWidth {
+        max-width: 921px;
+    }
+
+    .backgroundTop {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .backgroundBottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

@@ -2,8 +2,7 @@ import Image from "next/image";
 import React, { FC } from "react";
 
 import { CommonButton, Text, Title } from "@/components";
-
-import { BannerImages, COMMON_ICONS } from "../../../../public";
+import { BannerImages, COMMON_ICONS } from "@public";
 
 import { LabelTitle } from "./LabelTitle";
 import { IProps } from "./types";

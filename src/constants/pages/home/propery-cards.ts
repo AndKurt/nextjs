@@ -1,10 +1,9 @@
-import { TProps as TPropertyCards } from "@/components";
-
-import { PropertyCardImage } from "../../../../public";
+import { TPropertyCards } from "@/components";
+import { PROPERTY_CARD_IMG } from "@public";
 
 export const PROPERTY_CARDS: TPropertyCards[] = [
     {
-        image: PropertyCardImage.property_1,
+        image: PROPERTY_CARD_IMG.property_1,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Comefortable Appartment",
@@ -15,7 +14,7 @@ export const PROPERTY_CARDS: TPropertyCards[] = [
         square: 120,
     },
     {
-        image: PropertyCardImage.property_2,
+        image: PROPERTY_CARD_IMG.property_2,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Home in Downtown, Los Angeles",
@@ -26,7 +25,7 @@ export const PROPERTY_CARDS: TPropertyCards[] = [
         square: 120,
     },
     {
-        image: PropertyCardImage.property_3,
+        image: PROPERTY_CARD_IMG.property_3,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Comefortable Appartment",
@@ -37,7 +36,7 @@ export const PROPERTY_CARDS: TPropertyCards[] = [
         square: 120,
     },
     {
-        image: PropertyCardImage.property_4,
+        image: PROPERTY_CARD_IMG.property_4,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Home in Downtown, Los Angeles",
@@ -48,7 +47,7 @@ export const PROPERTY_CARDS: TPropertyCards[] = [
         square: 120,
     },
     {
-        image: PropertyCardImage.property_5,
+        image: PROPERTY_CARD_IMG.property_5,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Comefortable Appartment",
@@ -59,7 +58,7 @@ export const PROPERTY_CARDS: TPropertyCards[] = [
         square: 120,
     },
     {
-        image: PropertyCardImage.property_6,
+        image: PROPERTY_CARD_IMG.property_6,
         address: "709 West Drive Chicago, IL 60606",
         price: 3500,
         title: "Home in Downtown, Los Angeles",
