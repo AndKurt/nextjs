@@ -17,6 +17,7 @@ type TProps = {
     className?: string;
     size?: TFontSize;
     upperCase?: boolean;
+    align?: "center" | "left";
 };
 
 const kufam = Kufam({ subsets: ["latin"] });
@@ -30,6 +31,7 @@ export const Text: FC<PropsWithChildren<TProps>> = ({
     weight = "thin",
     font = "sans3",
     size = 20,
+    align = "left",
     upperCase = false,
 }) => {
     const TextTag = tag;
@@ -38,8 +40,17 @@ export const Text: FC<PropsWithChildren<TProps>> = ({
     const sizeCn = setFontSizeClassName(size);
     const weightCn = setFontWeightClassName(weight);
     const fontCn = font === "kufam" ? kufam.className : sans3.className;
+    const alignCn = align === "center" ? cn.alignCenter : cn.alignLeft;
 
-    const classes = clsx(colorCn, sizeCn, weightCn, fontCn, upperCase && cn.upperCase, className);
+    const classes = clsx(
+        colorCn,
+        sizeCn,
+        weightCn,
+        fontCn,
+        upperCase && cn.upperCase,
+        alignCn,
+        className,
+    );
 
     return <TextTag className={classes}>{children}</TextTag>;
 };

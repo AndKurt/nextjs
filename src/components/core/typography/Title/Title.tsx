@@ -5,6 +5,8 @@ import { TColors, TFont, TFontSize, TFontWeight, TTitleTag } from "@/types";
 
 import { setColorClassName, setFontSizeClassName, setFontWeightClassName } from "../utils";
 
+import cn from "../styles.module.scss";
+
 import clsx from "clsx";
 
 type TProps = {
@@ -14,6 +16,7 @@ type TProps = {
     size?: TFontSize;
     className?: string;
     font?: TFont;
+    align?: "center" | "left";
 };
 
 const kufam = Kufam({ subsets: ["latin"] });
@@ -27,6 +30,7 @@ export const Title: FC<PropsWithChildren<TProps>> = ({
     size = 35,
     className,
     font = "kufam",
+    align = "left",
 }) => {
     const TitleTag = tag;
 
@@ -34,8 +38,9 @@ export const Title: FC<PropsWithChildren<TProps>> = ({
     const sizeCn = setFontSizeClassName(size);
     const weightCn = setFontWeightClassName(weight);
     const fontCn = font === "kufam" ? kufam.className : sans3.className;
+    const alignCn = align === "center" ? cn.alignCenter : cn.alignLeft;
 
-    const classes = clsx(colorCn, sizeCn, weightCn, fontCn, className);
+    const classes = clsx(colorCn, sizeCn, weightCn, fontCn, alignCn, className);
 
     return <TitleTag className={classes}>{children}</TitleTag>;
 };

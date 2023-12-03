@@ -1,22 +1,16 @@
-.whyChoose {
+.services {
     display: flex;
-    justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 151px;
-    position: relative;
+    padding: 199px 0;
 
     @include responsive(tablet) {
-        padding-top: 180px;
-        padding-bottom: 110px;
+        padding: 120px 0;
     }
     @include responsive(mobile-l) {
-        padding-top: 120px;
-        padding-bottom: 90px;
+        padding: 100px 0;
     }
 
     @include responsive(mobile-s) {
-        padding-top: 80px;
-        padding-bottom: 60px;
+        padding: 60px 0;
     }
 
     .wrapper {
@@ -30,10 +24,9 @@
             position: relative;
 
             .title {
-                margin-bottom: 46px;
-                max-width: 700px;
                 text-align: center;
                 text-transform: capitalize;
+                margin-bottom: 47px;
 
                 @include responsive(mobile-l) {
                     margin-bottom: 30px;
@@ -47,7 +40,7 @@
             .cardsContainer {
                 display: flex;
                 justify-content: center;
-                gap: 38px;
+                gap: 77px;
                 width: 100%;
                 flex-wrap: wrap;
 
