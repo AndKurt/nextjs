@@ -1,0 +1,29 @@
+.neighborhoodsCard {
+    display: flex;
+    max-width: 333px;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    height: 407px;
+    border-radius: 5px;
+
+    @include responsive(mobile-l) {
+        max-width: 320px;
+    }
+    @include responsive(mobile-s) {
+        max-width: 300px;
+    }
+
+    .image {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+    .container {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        padding: 16px 20px;
+    }
+}

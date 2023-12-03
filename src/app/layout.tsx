@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Kufam } from "next/font/google";
 
-import { Footer, Header } from "@/components/shared";
+import { Footer, Header } from "@/components";
 
 import "@/styles/globals.scss";
 import cn from "./layout.module.scss";

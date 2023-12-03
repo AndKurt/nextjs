@@ -1,0 +1,62 @@
+.brands {
+    padding: 107px 137px;
+    background: #f5f1ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include responsive(tablet) {
+        padding: 90px 100px;
+    }
+    @include responsive(mobile-l) {
+        padding: 40px 50px;
+    }
+    @include responsive(mobile-s) {
+        padding: 40px 15px;
+    }
+
+    .title {
+        margin-bottom: 55px;
+
+        @include responsive(tablet) {
+            margin-bottom: 30px;
+        }
+        @include responsive(mobile-l) {
+            margin-bottom: 30px;
+        }
+        @include responsive(mobile-s) {
+            margin-bottom: 20px;
+        }
+    }
+    .container {
+        display: flex;
+        gap: 40px 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 42px;
+
+        @include responsive(tablet) {
+            gap: 30px 80px;
+        }
+        @include responsive(mobile-l) {
+            margin-bottom: 30px;
+            gap: 20px 60px;
+        }
+        @include responsive(mobile-s) {
+            margin-bottom: 20px;
+            gap: 20px 30px;
+        }
+
+        .image {
+            @include responsive(tablet) {
+                transform: scale(0.8);
+            }
+            @include responsive(mobile-l) {
+                transform: scale(0.7);
+            }
+            @include responsive(mobile-s) {
+                transform: scale(0.6);
+            }
+        }
+    }
+}
