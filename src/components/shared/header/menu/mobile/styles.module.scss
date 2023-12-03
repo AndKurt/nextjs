@@ -24,8 +24,6 @@
             text-decoration: none;
             padding: 0;
             margin: 0;
-            padding: 100px 10px;
-            width: 250px;
             background-color: $color-white;
             height: 100vh;
             transition: 0.2s ease;
@@ -61,16 +59,25 @@
             & .button {
                 padding: 10px;
             }
+
+            &.show {
+                padding: 100px 10px;
+            }
+            &.hide {
+                padding: 100px 0;
+            }
         }
         .show {
             opacity: 1;
             left: 0;
             visibility: visible;
+            width: 250px;
         }
 
         .hide {
             opacity: 0;
             left: 100%;
+            width: 0;
             visibility: hidden;
         }
     }

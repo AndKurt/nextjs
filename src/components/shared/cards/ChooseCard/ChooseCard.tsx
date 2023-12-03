@@ -16,21 +16,24 @@ export const ChooseCard: FC<TProps> = ({
     width = "short",
     background = "none",
 }) => {
-    const cardClasses = clsx(cn.chooseCard, {
-        bottomBackground: background === "bottom",
-        topBackground: background === "top",
-        fullWidth: width === "full",
-    });
+    const cardClasses = clsx(
+        cn.chooseCard,
+        background === "bottom" && cn.backgroundBottom,
+        background === "top" && cn.backgroundTop,
+        width === "full" && cn.fullWidth,
+    );
 
     console.log({ width }, { background }, cardClasses);
 
     return (
         <div className={cardClasses}>
-            <Image
-                alt={title}
-                className={cn.image}
-                src={image}
-            />
+            <div className={cn.image}>
+                <Image
+                    alt={title}
+                    src={image}
+                />
+            </div>
+
             <div className={clsx(cn.container)}>
                 <Title
                     color='primary'
