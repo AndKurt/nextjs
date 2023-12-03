@@ -1,0 +1,58 @@
+.aboutUs {
+    display: flex;
+    padding: 173px 0;
+    background: #f2f1ef;
+    background-repeat: no-repeat;
+    background-image: url("../../../../../../public/background/home-about-us.png");
+    background-position: right;
+
+    @include responsive(tablet) {
+        padding: 100px 0;
+        background-size: 85%;
+    }
+
+    @include responsive(mobile-l) {
+        padding: 80px 0;
+        background-size: 70%;
+    }
+
+    @include responsive(mobile-s) {
+        padding: 60px 0;
+        background-size: 55%;
+    }
+
+    .wrapper {
+        @include wrapper;
+
+        .container {
+            max-width: 659px;
+
+            @include responsive(tablet) {
+                max-width: 500px;
+            }
+
+            @include responsive(mobile-l) {
+                max-width: 400px;
+            }
+
+            @include responsive(mobile-s) {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .text {
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 38px;
+                }
+            }
+        }
+    }
+}

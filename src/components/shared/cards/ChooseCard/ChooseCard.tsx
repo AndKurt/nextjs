@@ -23,8 +23,6 @@ export const ChooseCard: FC<TProps> = ({
         width === "full" && cn.fullWidth,
     );
 
-    console.log({ width }, { background }, cardClasses);
-
     return (
         <div className={cardClasses}>
             <div className={cn.image}>

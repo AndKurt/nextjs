@@ -1,4 +1,4 @@
-import { FeaturedProperties, MainBanner, WhyChoose } from "@/components";
+import { AboutUs, FeaturedProperties, MainBanner, WhyChoose } from "@/components";
 import { BannerImages } from "@public";
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
             <section>Buying & Selling Property In An Easy Way</section>
             <FeaturedProperties />
             <WhyChoose />
+            <AboutUs />
             <section>Why Choose Our Properties Of Real Estate Industries</section>
             <section>42+ years of helping you find the right Propertys</section>
         </>
