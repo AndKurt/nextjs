@@ -1,6 +1,9 @@
 .services {
     display: flex;
     padding: 199px 0;
+    background-image: url("../../../../../../public/background/home-services.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
 
     @include responsive(tablet) {
         padding: 120px 0;

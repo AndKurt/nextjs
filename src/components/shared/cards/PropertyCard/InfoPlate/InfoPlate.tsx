@@ -3,14 +3,14 @@ import React, { FC } from "react";
 
 import { Text } from "@/components/core";
 
-type IProps = {
+type TProps = {
     img: StaticImageData;
     text: string;
 };
 
 import cn from "./styles.module.scss";
 
-export const InfoPlate: FC<IProps> = ({ img, text }) => {
+export const InfoPlate: FC<TProps> = ({ img, text }) => {
     return (
         <div className={cn.infoPlate}>
             <Image

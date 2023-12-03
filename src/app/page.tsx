@@ -1,5 +1,7 @@
 import {
     AboutUs,
+    Blog,
+    Counter,
     FeaturedProperties,
     MainBanner,
     Neighborhoods,
@@ -22,8 +24,9 @@ export default function Home() {
             <WhyChoose />
             <AboutUs />
             <Services />
+            <Counter />
             <Neighborhoods />
-            <section>42+ years of helping you find the right Propertys</section>
+            <Blog />
         </>
     );
 }

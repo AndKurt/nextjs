@@ -1,3 +1,3 @@
-export type IProps = {
+export type TProps = {
     labelTitle: string;
 };

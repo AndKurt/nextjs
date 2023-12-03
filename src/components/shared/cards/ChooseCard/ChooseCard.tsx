@@ -32,7 +32,7 @@ export const ChooseCard: FC<TProps> = ({
                 />
             </div>
 
-            <div className={clsx(cn.container)}>
+            <div className={cn.container}>
                 <Title
                     color='primary'
                     size={25}

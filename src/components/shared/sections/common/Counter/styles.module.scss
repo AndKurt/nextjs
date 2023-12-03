@@ -1,0 +1,49 @@
+.counter {
+    padding-top: 102px;
+
+    @include responsive(tablet) {
+        padding-top: 45px;
+    }
+    @include responsive(mobile-l) {
+        padding-top: 30px;
+    }
+    @include responsive(mobile-s) {
+        padding-top: 20px;
+    }
+
+    .wrapper {
+        @include wrapper;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #e4e4e4;
+        align-items: center;
+
+        .container {
+            display: flex;
+            max-width: 1189px;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-bottom: 86px;
+            justify-content: space-between;
+
+            @include responsive(tablet) {
+                padding-bottom: 45px;
+            }
+            @include responsive(mobile-l) {
+                padding-bottom: 30px;
+            }
+            @include responsive(mobile-s) {
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 20px;
+            }
+
+            .block {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 10px;
+            }
+        }
+    }
+}

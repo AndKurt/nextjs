@@ -4,11 +4,11 @@ import React, { FC } from "react";
 import { Text } from "@/components";
 import { COMMON_ICONS } from "@public";
 
-import { IProps } from "./types";
+import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const LabelTitle: FC<IProps> = ({ labelTitle }) => {
+export const LabelTitle: FC<TProps> = ({ labelTitle }) => {
     return (
         <div className={cn.labelTitle}>
             <Image

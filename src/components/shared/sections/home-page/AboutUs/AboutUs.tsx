@@ -7,7 +7,7 @@ import cn from "./styles.module.scss";
 
 export const AboutUs = () => {
     return (
-        <div className={cn.aboutUs}>
+        <section className={cn.aboutUs}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
@@ -34,6 +34,6 @@ export const AboutUs = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

@@ -5,11 +5,11 @@ import { CommonButton, Text, Title } from "@/components";
 import { BannerImages, COMMON_ICONS } from "@public";
 
 import { LabelTitle } from "./LabelTitle";
-import { IProps } from "./types";
+import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const MainBanner: FC<IProps> = ({ backgroundImg, labelTitle, title, text }) => {
+export const MainBanner: FC<TProps> = ({ backgroundImg, labelTitle, title, text }) => {
     return (
         <section className={cn.mainBanner}>
             <div className={cn.container}>

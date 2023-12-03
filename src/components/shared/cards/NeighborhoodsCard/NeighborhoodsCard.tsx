@@ -7,8 +7,6 @@ import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-import clsx from "clsx";
-
 export const NeighborhoodsCard: FC<TProps> = ({ image, title, countOfProperties }) => {
     return (
         <div className={cn.neighborhoodsCard}>
@@ -18,7 +16,7 @@ export const NeighborhoodsCard: FC<TProps> = ({ image, title, countOfProperties 
                     src={image}
                 />
             </div>
-            <div className={clsx(cn.container)}>
+            <div className={cn.container}>
                 <Text
                     color='white'
                     size={25}

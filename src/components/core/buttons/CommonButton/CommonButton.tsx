@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 
-import { IProps } from "./types";
+import { TProps } from "./types";
 import { sesColorClassName } from "./utils";
 
 import cn from "./styles.module.scss";
 
 import clsx from "clsx";
 
-export const CommonButton: FC<IProps> = ({
+export const CommonButton: FC<TProps> = ({
     text,
     onClick,
     link,

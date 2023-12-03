@@ -2,7 +2,7 @@ import { SyntheticEvent } from "react";
 
 import { TColors } from "@/types";
 
-export type IProps = {
+export type TProps = {
     text: string;
     link?: string;
     onClick?: (e?: SyntheticEvent) => void;

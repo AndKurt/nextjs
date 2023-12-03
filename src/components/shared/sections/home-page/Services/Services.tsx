@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SectionTitle, ServiceCard, Title } from "@/components";
-import { SERVICE_CARDS } from "@/constants/pages/home/services-cards";
+import { SERVICE_CARDS } from "@/constants";
 
 import cn from "./styles.module.scss";
 

@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
 export type TProps = {
-    backgroundImg: StaticImageData;
-    labelTitle: string;
+    image: StaticImageData;
     title: string;
-    text?: string;
+    text: string;
+    date: string;
 };
