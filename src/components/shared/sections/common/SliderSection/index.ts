@@ -1,1 +1,1 @@
-export * from "./SliderSection";
+export { SliderSection } from "./SliderSection";

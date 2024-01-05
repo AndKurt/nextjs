@@ -18,10 +18,10 @@ export const Brands: FC = () => {
                 More than 50+ Brands Trusted World Wide
             </Title>
             <div className={cn.container}>
-                {BRANDS_IMG.map(image => (
+                {BRANDS_IMG.map((image, index) => (
                     <div
                         className={cn.image}
-                        key={String(image)}
+                        key={index}
                     >
                         <Image
                             alt={String(image)}

@@ -18,12 +18,12 @@ export const SliderReviewText: FC<TProps> = ({ text }) => {
         let boldSecondary = false;
         let boldPrimary = false;
 
-        const result = parts.map(part => {
+        const result = parts.map((part, index) => {
             if (part === "{star}") {
                 return (
                     <Image
                         alt='Star'
-                        key={String(chainImage)}
+                        key={String(chainImage) + index}
                         src={starImage}
                     />
                 );
@@ -31,7 +31,7 @@ export const SliderReviewText: FC<TProps> = ({ text }) => {
                 return (
                     <Image
                         alt='Chain'
-                        key={String(chainImage)}
+                        key={String(chainImage) + index}
                         src={chainImage}
                     />
                 );
@@ -47,7 +47,7 @@ export const SliderReviewText: FC<TProps> = ({ text }) => {
                 return (
                     <Text
                         color={boldPrimary ? "primary" : "link"}
-                        key={part}
+                        key={part + index}
                         tag='span'
                         weight='bold'
                     >
@@ -58,7 +58,7 @@ export const SliderReviewText: FC<TProps> = ({ text }) => {
 
             return (
                 <Text
-                    key={part}
+                    key={part + index}
                     tag='span'
                 >
                     {part}
@@ -87,10 +87,10 @@ export const SliderReviewText: FC<TProps> = ({ text }) => {
 
         return (
             <>
-                {mappedText.map(item => (
+                {mappedText.map((item, index) => (
                     <div
                         className={cn.sliderReviewTextContainer}
-                        key={String(item)}
+                        key={String(item) + index}
                     >
                         {item}
                     </div>

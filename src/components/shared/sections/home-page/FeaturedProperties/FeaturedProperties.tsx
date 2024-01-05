@@ -17,24 +17,27 @@ export const FeaturedProperties = () => {
                     <Title className={cn.title}>Properties for sale in your favorite area</Title>
                     <div className={cn.cardsContainer}>
                         {PROPERTY_CARDS.map(
-                            ({
-                                address,
-                                baths,
-                                beds,
-                                buttonLink,
-                                image,
-                                parking,
-                                price,
-                                square,
-                                title,
-                            }) => (
+                            (
+                                {
+                                    address,
+                                    baths,
+                                    beds,
+                                    buttonLink,
+                                    image,
+                                    parking,
+                                    price,
+                                    square,
+                                    title,
+                                },
+                                index,
+                            ) => (
                                 <PropertyCard
                                     address={address}
                                     baths={baths}
                                     beds={beds}
                                     buttonLink={buttonLink}
                                     image={image}
-                                    key={title}
+                                    key={title + index}
                                     parking={parking}
                                     price={price}
                                     square={square}

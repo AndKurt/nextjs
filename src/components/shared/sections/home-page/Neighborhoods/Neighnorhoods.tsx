@@ -16,11 +16,11 @@ export const Neighborhoods = () => {
                     />
                     <Title className={cn.title}>Discover The Neighborhoods</Title>
                     <div className={cn.cardsContainer}>
-                        {NEIGHBORHOODS_CARDS.map(({ image, title, countOfProperties }) => (
+                        {NEIGHBORHOODS_CARDS.map(({ image, title, countOfProperties }, index) => (
                             <NeighborhoodsCard
                                 countOfProperties={countOfProperties}
                                 image={image}
-                                key={title}
+                                key={title + index}
                                 title={title}
                             />
                         ))}
