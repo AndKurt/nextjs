@@ -1,14 +1,7 @@
 .slider {
-    display: flex;
-    flex-direction: column;
-
-    .navigation {
+    .card {
+        cursor: ew-resize;
         display: flex;
-        gap: 20px;
-    }
-
-    .cardsContainer {
-        display: flex;
-        gap: 40px;
+        justify-content: center;
     }
 }
