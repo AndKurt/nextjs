@@ -1,0 +1,49 @@
+.sliderSection {
+    background: #f3e8e2;
+    padding: 193px 0;
+
+    @include responsive(tablet) {
+        padding: 110px 0;
+    }
+    @include responsive(mobile-l) {
+        padding: 70px 0;
+    }
+    @include responsive(mobile-s) {
+        padding: 30px 0;
+    }
+
+    .wrapper {
+        @include wrapper;
+    }
+
+    .title {
+        margin-left: 211px;
+        max-width: 540px;
+        margin-bottom: 10px;
+
+        @include responsive(tablet) {
+            margin-left: 120px;
+        }
+
+        @include responsive(mobile-l) {
+            margin-left: 80px;
+        }
+        @include responsive(mobile-s) {
+            margin-left: 30px;
+        }
+    }
+
+    .cardsContainer {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @include responsive(mobile-l) {
+            gap: 25px;
+        }
+        @include responsive(mobile-s) {
+            gap: 10px;
+        }
+    }
+}

@@ -3,3 +3,4 @@ export * from "./choose-cards";
 export * from "./service-cards";
 export * from "./neighborhoods-cards";
 export * from "./blog-cards";
+export * from "./happy-customer";

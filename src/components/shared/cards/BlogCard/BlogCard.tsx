@@ -21,7 +21,7 @@ export const BlogCard: FC<TProps> = ({ image, text, date, title }) => {
                     align='center'
                     className={cn.date}
                     color='link'
-                    size={25}
+                    size={20}
                 >
                     {date} | {text}
                 </Text>

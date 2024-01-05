@@ -1,0 +1,33 @@
+.sliderCard {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+
+    .reviewInfo {
+        border-radius: 70px 70px 70px 0px;
+        padding: 52px 46px;
+        background: linear-gradient(232deg, #ecc8b7 9.23%, #f4dbce 94.02%);
+        margin-bottom: 27px;
+    }
+
+    @include responsive(mobile-l) {
+        max-width: 350px;
+    }
+    @include responsive(mobile-s) {
+        max-width: 300px;
+    }
+
+    .customer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .customerPhoto {
+            border-radius: 50%;
+            position: relative;
+            border: 6px solid #f4dacd;
+            width: 98px;
+            height: 98px;
+        }
+    }
+}
