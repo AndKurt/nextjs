@@ -1,0 +1,95 @@
+.intro {
+    display: flex;
+    padding: 100px 0 175px;
+
+    @include responsive(tablet) {
+        padding: 80px 0 100px;
+    }
+    @include responsive(mobile-l) {
+        padding: 60px 0 80px;
+    }
+
+    @include responsive(mobile-s) {
+        padding: 40px 0 60px;
+    }
+
+    .wrapper {
+        @include wrapper;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            @include responsive(tablet) {
+                justify-content: center;
+            }
+
+            @include responsive(mobile-l) {
+                justify-content: center;
+            }
+
+            @include responsive(mobile-s) {
+                justify-content: center;
+            }
+
+            .introInfoContainer {
+                display: flex;
+                flex-direction: column;
+                max-width: 942px;
+                width: 100%;
+                gap: 25px;
+                background: #f2f2f2;
+                padding: 65px 72px;
+
+                @include responsive(tablet) {
+                    gap: 20px;
+                    padding: 50px 60px;
+                }
+
+                @include responsive(mobile-l) {
+                    align-items: center;
+                    gap: 15px;
+                    padding: 40px 50px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                @include responsive(mobile-s) {
+                    align-items: center;
+                    gap: 15px;
+                    padding: 20px 30px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .videoContainer {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 420px;
+                height: auto;
+                z-index: 1;
+
+                @include responsive(mobile-l) {
+                    max-width: 380px;
+                }
+
+                @include responsive(mobile-s) {
+                    max-width: 320px;
+                }
+
+                video {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

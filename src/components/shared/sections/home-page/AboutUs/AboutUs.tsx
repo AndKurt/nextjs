@@ -1,22 +1,21 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { CommonButton, SectionTitle, Text, Title } from "@/components";
+import { TSectionProps } from "@/types";
 import { COMMON_ICONS } from "@public";
 
 import cn from "./styles.module.scss";
 
-export const AboutUs = () => {
+export const AboutUs: FC<TSectionProps> = ({ commonTitle, sectionNumber, sectionTitle }) => {
     return (
         <section className={cn.aboutUs}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
-                        sectionNumber='04'
-                        title='About us'
+                        sectionNumber={sectionNumber}
+                        title={sectionTitle}
                     />
-                    <Title className={cn.title}>
-                        42+ years of helping you find the right Propertys
-                    </Title>
+                    <Title className={cn.title}>{commonTitle}</Title>
                     <Text className={cn.text}>
                         Distinctively re-engineer revolutionary meta-services and premium At vero
                         eos et accusamus et iusto

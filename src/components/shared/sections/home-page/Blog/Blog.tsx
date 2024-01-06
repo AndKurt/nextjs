@@ -1,21 +1,22 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { BlogCard, CommonButton, SectionTitle, Title } from "@/components";
 import { BLOG_CARDS } from "@/constants";
+import { TSectionProps } from "@/types";
 import { COMMON_ICONS } from "@public";
 
 import cn from "./styles.module.scss";
 
-export const Blog = () => {
+export const Blog: FC<TSectionProps> = ({ commonTitle, sectionNumber, sectionTitle }) => {
     return (
         <section className={cn.blog}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
-                        sectionNumber='07'
-                        title='Blog'
+                        sectionNumber={sectionNumber}
+                        title={sectionTitle}
                     />
-                    <Title className={cn.title}>Discover The Neighborhoods</Title>
+                    <Title className={cn.title}>{commonTitle}</Title>
                     <div className={cn.cardsContainer}>
                         {BLOG_CARDS.map(({ image, date, text, title }) => (
                             <BlogCard

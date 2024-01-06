@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const withVideos = require('next-videos')
+
 const path = require("path");
 
 const nextConfig = {
@@ -10,4 +12,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withVideos(nextConfig);

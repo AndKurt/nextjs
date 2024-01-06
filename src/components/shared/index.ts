@@ -7,3 +7,4 @@ export * from "./cards";
 export * from "./sections";
 export * from "./SliderReviewText";
 export * from "./Slider";
+export * from "./VideoPlayer";

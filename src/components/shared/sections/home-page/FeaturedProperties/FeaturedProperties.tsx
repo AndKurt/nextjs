@@ -1,20 +1,25 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { PropertyCard, SectionTitle, Title } from "@/components";
 import { PROPERTY_CARDS } from "@/constants";
+import { TSectionProps } from "@/types";
 
 import cn from "./styles.module.scss";
 
-export const FeaturedProperties = () => {
+export const FeaturedProperties: FC<TSectionProps> = ({
+    commonTitle,
+    sectionNumber,
+    sectionTitle,
+}) => {
     return (
         <section className={cn.featuredProperties}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
-                        sectionNumber='02'
-                        title='Featured properties'
+                        sectionNumber={sectionNumber}
+                        title={sectionTitle}
                     />
-                    <Title className={cn.title}>Properties for sale in your favorite area</Title>
+                    <Title className={cn.title}>{commonTitle}</Title>
                     <div className={cn.cardsContainer}>
                         {PROPERTY_CARDS.map(
                             (

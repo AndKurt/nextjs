@@ -1,0 +1,14 @@
+.videoPlayer {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+
+    @include responsive(mobile-l) {
+        height: 300px;
+    }
+
+    @include responsive(mobile-s) {
+        justify-content: center;
+        height: 300px;
+    }
+}
