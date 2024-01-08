@@ -23,6 +23,10 @@ export const setColorClassName = (color: TTextColors) => {
 
 export const setFontSizeClassName = (size: TFontSize) => {
     switch (size) {
+        case 278:
+            return cn.size278;
+        case 65:
+            return cn.size65;
         case 45:
             return cn.size45;
         case 40:

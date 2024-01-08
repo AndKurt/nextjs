@@ -8,9 +8,9 @@ import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const LabelTitle: FC<TProps> = ({ labelTitle }) => {
+export const PageTitle: FC<TProps> = ({ labelTitle }) => {
     return (
-        <div className={cn.labelTitle}>
+        <div className={cn.pageTitle}>
             <Image
                 alt='label-image'
                 src={COMMON_ICONS.home}

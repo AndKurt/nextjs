@@ -45,6 +45,18 @@
                 gap: 15px;
             }
         }
+
+        .contentError {
+            max-width: 693px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    .containerError {
+        display: flex;
+        justify-content: center;
     }
 
     .backgroundImg {
@@ -70,6 +82,17 @@
 
         @include responsive(mobile-s) {
             max-width: 200px;
+        }
+    }
+
+    .backgroundImgError {
+        width: 100%;
+        max-width: 886px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 

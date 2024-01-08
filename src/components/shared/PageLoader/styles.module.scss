@@ -1,0 +1,65 @@
+.pageLoader {
+    background: linear-gradient(108deg, #fff6f2 16.64%, #eec1ac 101.15%);
+    padding: 300px 0;
+
+    @include responsive(tablet) {
+        padding: 200px 0;
+    }
+    @include responsive(mobile-l) {
+        padding: 100px 0;
+    }
+    @include responsive(mobile-s) {
+        padding: 90px 0;
+    }
+
+    .wrapper {
+        @include wrapper;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .loader {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include responsive(mobile-l) {
+                width: 120px;
+                height: 120px;
+            }
+            @include responsive(mobile-s) {
+                width: 90px;
+                height: 90px;
+            }
+
+            .loaderCube {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+
+            .loaderCubeGlowing {
+                z-index: 2;
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 2px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .loaderCubeColor {
+                z-index: 1;
+                filter: blur(2px);
+                background: linear-gradient(135deg, #d9d9d9, #ffbb50);
+                animation: loadtwo 2.5s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes loadtwo {
+    50% {
+        transform: rotate(-80deg);
+    }
+}

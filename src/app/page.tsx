@@ -25,6 +25,7 @@ export default function Home() {
         <>
             <MainBanner
                 backgroundImg={BannerImages.home}
+                button={{ text: "Explore Property", link: "/" }}
                 labelTitle='Real Estate Agency'
                 text='Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate.'
                 title='Find the perfect place to Live with your family'

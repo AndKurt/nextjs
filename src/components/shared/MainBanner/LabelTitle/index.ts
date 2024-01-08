@@ -1,1 +1,0 @@
-export { LabelTitle } from "./LabelTitle";

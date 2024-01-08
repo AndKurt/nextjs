@@ -1,38 +1,69 @@
 import Image from "next/image";
 import React, { FC } from "react";
 
-import { CommonButton, Text, Title } from "@/components";
+import { CommonButton, PageTitle, Text, Title } from "@/components";
 import { BannerImages, COMMON_ICONS } from "@public";
 
-import { LabelTitle } from "./LabelTitle";
 import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const MainBanner: FC<TProps> = ({ backgroundImg, labelTitle, title, text }) => {
+import clsx from "clsx";
+
+export const MainBanner: FC<TProps> = ({
+    backgroundImg,
+    labelTitle,
+    title,
+    text,
+    button,
+    isErrorPage = false,
+}) => {
     return (
         <section className={cn.mainBanner}>
-            <div className={cn.container}>
-                <div className={cn.content}>
-                    <LabelTitle labelTitle={labelTitle} />
-                    <Title>{title}</Title>
-                    <Text>{text}</Text>
-                    <CommonButton
-                        color='white'
-                        link='/'
-                        rightAddon={COMMON_ICONS.yellowArrow}
-                        text='Explore Property'
-                    />
+            <div className={clsx(cn.container, isErrorPage && cn.containerError)}>
+                <div className={clsx(cn.content, isErrorPage && cn.contentError)}>
+                    <PageTitle labelTitle={labelTitle} />
+
+                    <Title
+                        size={isErrorPage ? 278 : 65}
+                        tag='h1'
+                    >
+                        {title}
+                    </Title>
+
+                    {isErrorPage && (
+                        <div className={cn.backgroundImgError}>
+                            <Image
+                                alt='banner-image'
+                                objectFit='cover'
+                                src={backgroundImg}
+                            />
+                        </div>
+                    )}
+
+                    {isErrorPage && <Title size={65}>Page Not Found</Title>}
+
+                    {text && <Text align={isErrorPage ? "center" : "left"}>{text}</Text>}
+
+                    {button && (
+                        <CommonButton
+                            color='white'
+                            link={button.link}
+                            rightAddon={COMMON_ICONS.yellowArrow}
+                            text={button.text}
+                        />
+                    )}
                 </div>
             </div>
-            <div className={cn.backgroundImg}>
-                <Image
-                    alt='banner-image'
-                    className={cn.backgroundImg}
-                    objectFit='cover'
-                    src={backgroundImg}
-                />
-            </div>
+            {!isErrorPage && (
+                <div className={cn.backgroundImg}>
+                    <Image
+                        alt='banner-image'
+                        objectFit='cover'
+                        src={backgroundImg}
+                    />
+                </div>
+            )}
             <div className={cn.leftBackgroundImg}>
                 <Image
                     alt='left-background'
@@ -42,7 +73,7 @@ export const MainBanner: FC<TProps> = ({ backgroundImg, labelTitle, title, text 
             </div>
             <div className={cn.rightBackgroundImg}>
                 <Image
-                    alt='left-background'
+                    alt='right-background'
                     objectFit='cover'
                     src={BannerImages.rightBackground}
                 />

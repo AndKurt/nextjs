@@ -5,4 +5,11 @@ export type TProps = {
     labelTitle: string;
     title: string;
     text?: string;
+    button?: TButton;
+    isErrorPage?: boolean;
+};
+
+type TButton = {
+    text: string;
+    link: string;
 };

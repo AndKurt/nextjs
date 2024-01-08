@@ -31,6 +31,36 @@
 }
 
 //Font size
+.size278 {
+    font-size: $size-heading-278;
+    height: $size-heading-278;
+
+    @include responsive(tablet) {
+        font-size: $size-heading-65;
+        height: $size-heading-65;
+    }
+    @include responsive(mobile-l) {
+        font-size: $size-heading-h1;
+        height: $size-heading-h1;
+    }
+    @include responsive(mobile-s) {
+        font-size: $size-heading-h2;
+        height: $size-heading-h2;
+    }
+}
+.size65 {
+    font-size: $size-heading-65;
+
+    @include responsive(tablet) {
+        font-size: $size-heading-h1;
+    }
+    @include responsive(mobile-l) {
+        font-size: $size-heading-h2;
+    }
+    @include responsive(mobile-s) {
+        font-size: $size-heading-h3;
+    }
+}
 .size45 {
     font-size: $size-heading-h1;
 
