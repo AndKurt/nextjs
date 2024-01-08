@@ -1,6 +1,7 @@
 import {
     AboutUs,
     Blog,
+    Brands,
     Counter,
     FeaturedProperties,
     Intro,
@@ -62,6 +63,7 @@ export default function Home() {
                 sectionNumber='06'
                 sectionTitle='Neighborhoods'
             />
+            <Brands />
             <Blog
                 commonTitle='Discover The Neighborhoods'
                 sectionNumber='07'

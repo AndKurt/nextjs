@@ -6,6 +6,7 @@ export type TProps = {
     title: string;
     text?: string;
     button?: TButton;
+    isHomePage?: boolean;
     isErrorPage?: boolean;
 };
 

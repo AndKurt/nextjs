@@ -1,0 +1,46 @@
+.processSection {
+    padding: 89px 0 210px;
+
+    @include responsive(tablet) {
+        padding: 70px 0;
+    }
+    @include responsive(mobile-l) {
+        padding: 50px 0;
+    }
+    @include responsive(mobile-s) {
+        padding: 30px 0;
+    }
+
+    .wrapper {
+        @include wrapper;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                margin-bottom: 35px;
+            }
+
+            .cardsContainer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 28px;
+
+                @include responsive(tablet) {
+                    justify-content: center;
+                }
+                @include responsive(mobile-l) {
+                    gap: 25px;
+                    justify-content: center;
+                }
+                @include responsive(mobile-s) {
+                    gap: 10px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -4,3 +4,4 @@ export * from "./ServiceCard";
 export * from "./NeighborhoodsCard";
 export * from "./BlogCard";
 export * from "./SliderCard";
+export * from "./ProcessCard";

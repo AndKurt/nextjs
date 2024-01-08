@@ -17,9 +17,10 @@ export const MainBanner: FC<TProps> = ({
     text,
     button,
     isErrorPage = false,
+    isHomePage = true,
 }) => {
     return (
-        <section className={cn.mainBanner}>
+        <section className={clsx(cn.mainBanner, !isErrorPage && !isHomePage && cn.banner)}>
             <div className={clsx(cn.container, isErrorPage && cn.containerError)}>
                 <div className={clsx(cn.content, isErrorPage && cn.contentError)}>
                     <PageTitle labelTitle={labelTitle} />

@@ -1,0 +1,53 @@
+.processCard {
+    display: flex;
+    max-width: 392px;
+    min-width: 300px;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 58px 28px;
+
+    @include responsive(mobile-l) {
+        max-width: 350px;
+        padding: 40px 20px;
+    }
+    @include responsive(mobile-s) {
+        padding: 30px 15px;
+
+        max-width: 300px;
+    }
+
+    .number {
+        width: 103px;
+        height: 103px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color-secondary;
+        color: $color-white;
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+
+    .title {
+        margin-bottom: 12px;
+    }
+}
+
+.singleLineBg {
+    background-repeat: no-repeat;
+    background-image: url("../../../../../public/cards/process-cards/line_1.png"),
+        linear-gradient(143deg, #f3d1c1 2.44%, #ffeee5 98.38%);
+    background-position: top right;
+}
+.doubleLineBg {
+    background-repeat: no-repeat;
+    background-image: url("../../../../../public/cards/process-cards/line_2.png"),
+        linear-gradient(143deg, #f3d1c1 2.44%, #ffeee5 98.38%);
+    background-position: top right;
+}
+.tripleLineBg {
+    background-repeat: no-repeat;
+    background-image: url("../../../../../public/cards/process-cards/line_3.png"),
+        linear-gradient(143deg, #f3d1c1 2.44%, #ffeee5 98.38%);
+    background-position: top right;
+}

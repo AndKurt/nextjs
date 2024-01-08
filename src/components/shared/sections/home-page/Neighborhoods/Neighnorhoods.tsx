@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { Brands, NeighborhoodsCard, SectionTitle, Title } from "@/components";
+import { NeighborhoodsCard, SectionTitle, Title } from "@/components";
 import { NEIGHBORHOODS_CARDS } from "@/constants";
 import { TSectionProps } from "@/types";
 
@@ -26,7 +26,6 @@ export const Neighborhoods: FC<TSectionProps> = ({ commonTitle, sectionNumber, s
                             />
                         ))}
                     </div>
-                    <Brands />
                 </div>
             </div>
         </section>

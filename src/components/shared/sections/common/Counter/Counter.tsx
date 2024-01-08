@@ -4,6 +4,8 @@ import { Text, Title } from "@/components";
 
 import cn from "./styles.module.scss";
 
+import clsx from "clsx";
+
 const COUNTER_DATA = [
     {
         title: "56,180",
@@ -23,9 +25,13 @@ const COUNTER_DATA = [
     },
 ];
 
-export const Counter: FC = () => {
+type TProps = {
+    isSecondaryBackground?: boolean;
+};
+
+export const Counter: FC<TProps> = ({ isSecondaryBackground = false }) => {
     return (
-        <section className={cn.counter}>
+        <section className={clsx(cn.counter, isSecondaryBackground && cn.secondary)}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     {COUNTER_DATA.map(({ title, text }) => (
@@ -43,7 +49,7 @@ export const Counter: FC = () => {
                             </Title>
                             <Text
                                 align='center'
-                                color='link'
+                                color={isSecondaryBackground ? "white" : "link"}
                             >
                                 {text}
                             </Text>

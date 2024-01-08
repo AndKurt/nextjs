@@ -129,3 +129,18 @@
         right: 0;
     }
 }
+
+.banner {
+    padding: 400px 0 90px;
+    @include responsive(tablet) {
+        padding: 280px 0 80px;
+    }
+
+    @include responsive(mobile-l) {
+        padding: 200px 0 70px;
+    }
+
+    @include responsive(mobile-s) {
+        padding: 110px 0 60px;
+    }
+}
