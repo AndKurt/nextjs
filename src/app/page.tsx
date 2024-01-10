@@ -11,7 +11,7 @@ import {
     SliderSection,
     WhyChoose,
 } from "@/components";
-import { BannerImages } from "@public";
+import { BANNER_IMAGES } from "@public";
 
 export default function Home() {
     const IntroTitle = () => (
@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <>
             <MainBanner
-                backgroundImg={BannerImages.home}
+                backgroundImg={BANNER_IMAGES.home}
                 button={{ text: "Explore Property", link: "/" }}
                 labelTitle='Real Estate Agency'
                 text='Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate.'

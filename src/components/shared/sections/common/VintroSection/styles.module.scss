@@ -1,0 +1,117 @@
+.vintroSection {
+    .wrapper {
+        @include wrapper;
+        border-bottom: 1px solid #dac5bb;
+        padding: 120px 0 100px;
+
+        @include responsive(tablet) {
+            padding: 70px 0;
+        }
+        @include responsive(mobile-l) {
+            padding: 50px 0;
+        }
+        @include responsive(mobile-s) {
+            padding: 30px 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 60px;
+            padding: 0 15px;
+
+            @include responsive(tablet) {
+                justify-content: center;
+                gap: 30px;
+            }
+            @include responsive(mobile-l) {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            @include responsive(mobile-s) {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .imageContainer {
+                width: 100%;
+                max-width: 529px;
+                min-width: 300px;
+                height: auto;
+
+                @include responsive(mobile-l) {
+                    order: 2;
+                    max-width: 350px;
+                }
+                @include responsive(mobile-s) {
+                    order: 2;
+                    max-width: 300px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .contentContainer {
+                padding: 35px 0;
+                display: flex;
+                flex-direction: column;
+                max-width: 729px;
+                min-width: 300px;
+                width: 100%;
+                margin-bottom: 40px;
+
+                @include responsive(mobile-l) {
+                    align-items: center;
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+                @include responsive(mobile-s) {
+                    align-items: center;
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+
+                .title {
+                    margin-bottom: 20px;
+
+                    @include responsive(mobile-l) {
+                        text-align: center;
+                    }
+                    @include responsive(mobile-s) {
+                        text-align: center;
+                    }
+                }
+
+                .text {
+                    margin-bottom: 38px;
+
+                    @include responsive(mobile-l) {
+                        text-align: center;
+                    }
+                    @include responsive(mobile-s) {
+                        text-align: center;
+                    }
+                }
+
+                .textHelper {
+                    margin-bottom: 30px;
+
+                    &:last-of-type {
+                        margin-bottom: 38px;
+                    }
+
+                    @include responsive(mobile-l) {
+                        text-align: center;
+                    }
+                    @include responsive(mobile-s) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

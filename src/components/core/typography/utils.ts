@@ -16,6 +16,8 @@ export const setColorClassName = (color: TTextColors) => {
             return cn.link;
         case "border":
             return cn.border;
+        case "grey":
+            return cn.grey;
         default:
             return cn.primary;
     }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { FC } from "react";
 
 import { CommonButton, PageTitle, Text, Title } from "@/components";
-import { BannerImages, COMMON_ICONS } from "@public";
+import { BANNER_IMAGES, COMMON_ICONS } from "@public";
 
 import { TProps } from "./types";
 
@@ -69,14 +69,14 @@ export const MainBanner: FC<TProps> = ({
                 <Image
                     alt='left-background'
                     objectFit='cover'
-                    src={BannerImages.leftBackground}
+                    src={BANNER_IMAGES.leftBackground}
                 />
             </div>
             <div className={cn.rightBackgroundImg}>
                 <Image
                     alt='right-background'
                     objectFit='cover'
-                    src={BannerImages.rightBackground}
+                    src={BANNER_IMAGES.rightBackground}
                 />
             </div>
         </section>

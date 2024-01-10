@@ -1,6 +1,6 @@
 export type TColors = "white" | "primary" | "secondary";
 
-export type TTextColors = "content" | "link" | "border" | TColors;
+export type TTextColors = "content" | "link" | "border" | "grey" | TColors;
 
 export type TTitleTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "div";
 
