@@ -1,19 +1,19 @@
 .services {
     display: flex;
-    padding: 199px 0;
+    margin: 199px 0;
     background-image: url("../../../../../../public/background/home-services.png");
     background-position: bottom right;
     background-repeat: no-repeat;
 
     @include responsive(tablet) {
-        padding: 120px 0;
+        margin: 120px 0;
     }
     @include responsive(mobile-l) {
-        padding: 100px 0;
+        margin: 100px 0;
     }
 
     @include responsive(mobile-s) {
-        padding: 60px 0;
+        margin: 60px 0;
     }
 
     .wrapper {

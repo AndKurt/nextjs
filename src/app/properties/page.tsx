@@ -5,6 +5,7 @@ import {
     IntroPropertySectionChild,
     MainBanner,
     ProcessSection,
+    Services,
     VintroSection,
 } from "@/components";
 import { INTRO_PROPERTIES_TEXT_CONTENT } from "@/constants";
@@ -43,6 +44,11 @@ const Properties = () => {
                 commonTitle='Our Main Focus'
                 sectionNumber='02'
                 sectionTitle='Process'
+            />
+            <Services
+                commonTitle='See How Can Help'
+                sectionNumber='03'
+                sectionTitle='Services'
             />
             <Counter isSecondaryBackground />
         </>
