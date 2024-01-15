@@ -3,13 +3,14 @@ import React from "react";
 import {
     Brands,
     Counter,
+    ExpertsSection,
     IntroAboutSectionChild,
     MainBanner,
     ProcessSection,
     SliderSection,
     VintroSection,
 } from "@/components";
-import { INTRO_ABOUT_CONTENT } from "@/constants/pages/about";
+import { INTRO_ABOUT_CONTENT } from "@/constants/pages/about/intro-about-content";
 import { BANNER_IMAGES } from "@public";
 
 const About = () => {
@@ -46,6 +47,11 @@ const About = () => {
             />
             <SliderSection title='What our customers say about us' />
             <Counter isSecondaryBackground />
+            <ExpertsSection
+                commonTitle='Our Property Team'
+                sectionNumber='06'
+                sectionTitle='Experts'
+            />
             <Brands />
         </>
     );

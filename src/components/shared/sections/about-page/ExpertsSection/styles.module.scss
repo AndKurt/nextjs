@@ -1,0 +1,57 @@
+.expertsSection {
+    padding: 183px 0 86px;
+
+    @include responsive(tablet) {
+        padding: 100px 0 60px;
+    }
+
+    @include responsive(mobile-l) {
+        padding: 80px 0 40px;
+    }
+
+    @include responsive(mobile-s) {
+        padding: 60px 0 30px;
+    }
+
+    .wrapper {
+        @include wrapper;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                margin-bottom: 47px;
+
+                @include responsive(mobile-l) {
+                    margin-bottom: 30px;
+                }
+
+                @include responsive(mobile-s) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            .cardsContainer {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 22px;
+
+                @include responsive(tablet) {
+                    justify-content: center;
+                }
+
+                @include responsive(mobile-l) {
+                    justify-content: center;
+                }
+
+                @include responsive(mobile-s) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

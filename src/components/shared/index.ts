@@ -11,3 +11,4 @@ export * from "./VideoPlayer";
 export * from "./NotFoundBanner";
 export * from "./PageTitle";
 export * from "./PageLoader";
+export * from "./SocialLink";

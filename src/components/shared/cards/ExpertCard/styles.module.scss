@@ -1,0 +1,51 @@
+.expertCard {
+    display: flex;
+    max-width: 333px;
+    min-width: 300px;
+    flex-direction: column;
+    background: #f6f6f6;
+    transition: background 0.7s;
+    cursor: pointer;
+
+    &:hover {
+        background: $color-secondary;
+    }
+
+    //@include responsive(tablet) {
+    //}
+
+    //@include responsive(mobile-l) {
+    //}
+
+    //@include responsive(mobile-s) {
+    //}
+
+    .imgContainer {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .expertDetailsWrapper {
+        padding: 25px 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .expertDetails {
+            display: flex;
+            justify-content: space-between;
+
+            .socials {
+                max-width: 105px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

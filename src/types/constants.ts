@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { HTMLAttributeAnchorTarget } from "react";
 
 export type TMenuItem = {
@@ -6,7 +7,7 @@ export type TMenuItem = {
 };
 
 type TSocial = {
-    img: string;
+    img: StaticImageData;
     alt: string;
     link: string;
 };

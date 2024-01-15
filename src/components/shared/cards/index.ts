@@ -5,3 +5,4 @@ export * from "./NeighborhoodsCard";
 export * from "./BlogCard";
 export * from "./SliderCard";
 export * from "./ProcessCard";
+export * from "./ExpertCard";

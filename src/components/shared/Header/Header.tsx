@@ -10,7 +10,7 @@ import cn from "./styles.module.scss";
 export const Header = () => {
     return (
         <header className={cn.header}>
-            <Logo />
+            <Logo isLink />
             <nav className={cn.navigation}>
                 <DesktopMenu options={MENU_LIST} />
                 <MobileMenu options={MENU_LIST} />
