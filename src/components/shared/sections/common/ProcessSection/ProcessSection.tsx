@@ -1,33 +1,15 @@
 import React, { FC } from "react";
 
-import { ProcessCard, SectionTitle, TProcessCard } from "@/components";
-import {} from "@/components";
+import { ProcessCard, SectionTitle } from "@/components";
 import { Title } from "@/components/core";
+import { PROCESS_CARDS } from "@/constants";
 import { TSectionProps } from "@/types";
 
 import cn from "./styles.module.scss";
 
-const PROCESS_CARDS: TProcessCard[] = [
-    {
-        id: 1,
-        title: "Planning stage",
-        text: "High level overviews. approaches lverall value proposition. Organically grow the holistic world view of disruptive.",
-    },
-    {
-        id: 2,
-        title: "Development",
-        text: "High level overviews. approaches lverall value proposition. Organically grow the holistic world view of disruptive.",
-    },
-    {
-        id: 3,
-        title: "New way of living",
-        text: "High level overviews. approaches lverall value proposition. Organically grow the holistic world view of disruptive.",
-    },
-];
-
 export const ProcessSection: FC<TSectionProps> = ({ commonTitle, sectionNumber, sectionTitle }) => {
     return (
-        <div className={cn.processSection}>
+        <section className={cn.processSection}>
             <div className={cn.wrapper}>
                 <div className={cn.container}>
                     <SectionTitle
@@ -47,6 +29,6 @@ export const ProcessSection: FC<TSectionProps> = ({ commonTitle, sectionNumber, 
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

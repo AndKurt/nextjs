@@ -1,15 +1,15 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { FC, PropsWithChildren } from "react";
 
 import { SectionTitle, Text, Title } from "@/components";
-import { TSectionProps } from "@/types";
+import { TImageType, TSectionProps } from "@/types";
 
 import cn from "./styles.module.scss";
 
 import clsx from "clsx";
 
 type TProps = {
-    imgUrl: StaticImageData;
+    imgUrl: TImageType;
     text: string | string[];
 };
 

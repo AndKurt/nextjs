@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import { TImageType } from "@/types";
 
 export type TProps = {
-    backgroundImg: StaticImageData;
+    backgroundImg: TImageType;
     labelTitle: string;
     title: string;
     text?: string;

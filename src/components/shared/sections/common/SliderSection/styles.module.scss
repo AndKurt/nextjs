@@ -1,5 +1,5 @@
 .sliderSection {
-    background: #f3e8e2;
+    background: $color-section-background;
     padding: 193px 0;
 
     @include responsive(tablet) {

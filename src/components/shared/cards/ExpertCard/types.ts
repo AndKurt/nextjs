@@ -1,8 +1,8 @@
-import { StaticImageData } from "next/image";
+import { TImageType } from "@/types";
 
 export type TProps = {
     name: string;
-    image: StaticImageData;
+    image: TImageType;
     jobTitle: string;
     instagramLink: string;
     linkedInLink: string;

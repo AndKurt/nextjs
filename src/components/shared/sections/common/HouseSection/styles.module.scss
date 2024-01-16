@@ -1,0 +1,158 @@
+.houseSection {
+    padding: 183px 0;
+
+    @include responsive(tablet) {
+        padding: 70px 0;
+    }
+    @include responsive(mobile-l) {
+        padding: 50px 0;
+    }
+    @include responsive(mobile-s) {
+        padding: 30px 0;
+    }
+
+    .wrapper {
+        @include wrapper;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                text-transform: capitalize;
+                @include responsive(mobile-l) {
+                    text-align: center;
+                }
+                @include responsive(mobile-s) {
+                    text-align: center;
+                }
+            }
+
+            .text {
+                @include responsive(mobile-l) {
+                    text-align: center;
+                }
+                @include responsive(mobile-s) {
+                    text-align: center;
+                }
+            }
+
+            .contentTitle {
+                margin-bottom: 15px;
+            }
+            .subContentTitle {
+                margin-bottom: 4px;
+            }
+
+            .block {
+                display: flex;
+                justify-content: space-between;
+                gap: 45px;
+
+                @include responsive(mobile-l) {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+                @include responsive(mobile-s) {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 25px;
+                }
+            }
+
+            .textContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 675px;
+
+                .textContentIndent {
+                    margin-bottom: 50px;
+
+                    @include responsive(tablet) {
+                        margin-bottom: 40px;
+                    }
+                    @include responsive(mobile-l) {
+                        margin-bottom: 30px;
+                    }
+                    @include responsive(mobile-s) {
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .subTextContent {
+                    margin-bottom: 30px;
+
+                    @include responsive(mobile-l) {
+                        margin-bottom: 15px;
+                    }
+                    @include responsive(mobile-s) {
+                        margin-bottom: 10px;
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .firstBlock {
+                margin-bottom: 135px;
+
+                @include responsive(tablet) {
+                    margin-bottom: 60px;
+                }
+                @include responsive(mobile-l) {
+                    margin-bottom: 40px;
+                }
+                @include responsive(mobile-s) {
+                    margin-bottom: 25px;
+                }
+
+                .imageContainer {
+                    width: 100%;
+                    max-width: 675px;
+
+                    @include responsive(mobile-l) {
+                        order: 1;
+                    }
+                    @include responsive(mobile-s) {
+                        order: 1;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .secondBlock {
+                display: flex;
+
+                .videoContainer {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 675px;
+                    height: auto;
+                    z-index: 1;
+
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invertedBackground {
+    background: $color-section-background;
+}

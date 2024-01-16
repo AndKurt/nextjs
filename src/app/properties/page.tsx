@@ -2,6 +2,7 @@ import React from "react";
 
 import {
     Counter,
+    HouseSection,
     IntroPropertySectionChild,
     MainBanner,
     ProcessSection,
@@ -9,6 +10,7 @@ import {
     VintroSection,
 } from "@/components";
 import { INTRO_PROPERTIES_TEXT_CONTENT } from "@/constants";
+import { HOUSE_SECTION_PROPERTY_PAGE } from "@/constants/pages/properties";
 import { BANNER_IMAGES } from "@public";
 
 const Properties = () => {
@@ -50,6 +52,7 @@ const Properties = () => {
                 sectionNumber='03'
                 sectionTitle='Services'
             />
+            <HouseSection {...HOUSE_SECTION_PROPERTY_PAGE} />
             <Counter isSecondaryBackground />
         </>
     );

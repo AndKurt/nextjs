@@ -1,11 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { FC, useRef, useState } from "react";
 
 import { VideoButton } from "@/components/core";
-import introVideo from "@public/video/intro.mp4";
+
+import { TProps } from "./types";
 
 import cn from "./styles.module.scss";
 
-export const VideoPlayer = () => {
+export const VideoPlayer: FC<TProps> = ({ videoLink, poster }) => {
     const [isPlay, setIsPlay] = useState(false);
 
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -35,13 +36,13 @@ export const VideoPlayer = () => {
             />
             <video
                 className={cn.videoPlayer}
-                poster='/video/intro-poster.png'
+                poster={poster}
                 preload='none'
                 ref={videoRef}
                 onEnded={handleEnded}
             >
                 <source
-                    src={introVideo}
+                    src={videoLink}
                     type='video/mp4'
                 />
             </video>

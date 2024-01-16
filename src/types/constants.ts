@@ -7,7 +7,7 @@ export type TMenuItem = {
 };
 
 type TSocial = {
-    img: StaticImageData;
+    img: TImageType;
     alt: string;
     link: string;
 };
@@ -23,3 +23,5 @@ export type TFastLinks = TFastLinkGroup[];
 
 export type TContactInfo = { name: string; target?: HTMLAttributeAnchorTarget } & TSocial;
 export type TContacts = TContactInfo[];
+
+export type TImageType = StaticImageData | string;

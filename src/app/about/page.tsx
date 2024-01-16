@@ -4,12 +4,14 @@ import {
     Brands,
     Counter,
     ExpertsSection,
+    HouseSection,
     IntroAboutSectionChild,
     MainBanner,
     ProcessSection,
     SliderSection,
     VintroSection,
 } from "@/components";
+import { HOUSE_SECTION_ABOUT_PAGE } from "@/constants";
 import { INTRO_ABOUT_CONTENT } from "@/constants/pages/about/intro-about-content";
 import { BANNER_IMAGES } from "@public";
 
@@ -46,6 +48,7 @@ const About = () => {
                 sectionTitle='Process'
             />
             <SliderSection title='What our customers say about us' />
+            <HouseSection {...HOUSE_SECTION_ABOUT_PAGE} />
             <Counter isSecondaryBackground />
             <ExpertsSection
                 commonTitle='Our Property Team'

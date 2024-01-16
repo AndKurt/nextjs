@@ -1,14 +1,15 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { FC } from "react";
 
 import { Text } from "@/components/core";
-
-type TProps = {
-    img: StaticImageData;
-    text: string;
-};
+import { TImageType } from "@/types";
 
 import cn from "./styles.module.scss";
+
+type TProps = {
+    img: TImageType;
+    text: string;
+};
 
 export const InfoPlate: FC<TProps> = ({ img, text }) => {
     return (

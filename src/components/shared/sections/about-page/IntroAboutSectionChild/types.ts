@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import { TImageType } from "@/types";
 
 export type TContentAboutIntro = {
-    img: StaticImageData;
+    img: TImageType;
     title: string;
     text: string;
 };

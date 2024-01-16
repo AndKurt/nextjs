@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import { TImageType } from "@/types";
 
 export type TProps = {
     link: string;
     alt: string;
-    img: StaticImageData;
+    img: TImageType;
 };

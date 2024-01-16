@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import { TImageType } from "@/types";
 
 export type TProps = {
     text: string | string[];
     customerName: string;
-    customerPhoto: StaticImageData;
+    customerPhoto: TImageType;
 };

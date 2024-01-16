@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { SectionTitle, VideoPlayer } from "@/components";
 import { Text, Title } from "@/components/core";
 import { TSectionProps } from "@/types";
+import introVideo from "@public/video/intro.mp4";
 
 import cn from "./styles.module.scss";
 
@@ -25,7 +26,10 @@ export const Intro: FC<TSectionProps> = ({ commonTitle, sectionNumber, sectionTi
                         </Text>
                     </div>
                     <div className={cn.videoContainer}>
-                        <VideoPlayer />
+                        <VideoPlayer
+                            poster='/video/intro-poster.png'
+                            videoLink={introVideo}
+                        />
                     </div>
                 </div>
             </div>
