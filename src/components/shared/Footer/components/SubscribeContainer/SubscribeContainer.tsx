@@ -1,6 +1,7 @@
 import React from "react";
 
-import { CommonButton, Text, Title } from "@/components/core";
+import { Text, Title } from "@/components";
+import { SubscribeByEmailForm } from "@/components/form/SubscribeByEmailForm/SubscribeByEmailForm";
 
 import cn from "./styles.module.scss";
 
@@ -18,14 +19,7 @@ export const SubscribeContainer = () => {
                 approaches lverall value proposition. Organically grow the holistic world view of
                 disruptive.
             </Text>
-            <form className={cn.emailBlock}>
-                <input
-                    className={cn.emailInput}
-                    placeholder='your email address here'
-                    type='email'
-                />
-                <CommonButton text='Subscribe Now' />
-            </form>
+            <SubscribeByEmailForm />
         </section>
     );
 };

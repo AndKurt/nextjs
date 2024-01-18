@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 
-import { Slider, Title } from "@/components";
+import { Title } from "@/components";
+import { Slider } from "@/components/shared/Slider/Slider";
 
 import cn from "./styles.module.scss";
 

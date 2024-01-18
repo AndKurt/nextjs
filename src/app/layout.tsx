@@ -3,6 +3,8 @@ import { Kufam } from "next/font/google";
 
 import { Footer, Header } from "@/components";
 
+import { Providers } from "./providers";
+
 import "@/styles/globals.scss";
 import cn from "./layout.module.scss";
 
@@ -21,9 +23,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang='en'>
             <body>
                 <div className={clsx(kufam.className, cn.wrapper)}>
-                    <Header />
-                    <main className={cn.main}>{children}</main>
-                    <Footer />
+                    <Providers>
+                        <Header />
+                        <main className={cn.main}>{children}</main>
+                        <Footer />
+                    </Providers>
                 </div>
             </body>
         </html>

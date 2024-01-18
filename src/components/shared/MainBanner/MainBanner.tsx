@@ -36,7 +36,6 @@ export const MainBanner: FC<TProps> = ({
                         <div className={cn.backgroundImgError}>
                             <Image
                                 alt='banner-image'
-                                objectFit='cover'
                                 src={backgroundImg}
                             />
                         </div>
@@ -60,7 +59,6 @@ export const MainBanner: FC<TProps> = ({
                 <div className={cn.backgroundImg}>
                     <Image
                         alt='banner-image'
-                        objectFit='cover'
                         src={backgroundImg}
                     />
                 </div>
@@ -68,14 +66,12 @@ export const MainBanner: FC<TProps> = ({
             <div className={cn.leftBackgroundImg}>
                 <Image
                     alt='left-background'
-                    objectFit='cover'
                     src={BANNER_IMAGES.leftBackground}
                 />
             </div>
             <div className={cn.rightBackgroundImg}>
                 <Image
                     alt='right-background'
-                    objectFit='cover'
                     src={BANNER_IMAGES.rightBackground}
                 />
             </div>

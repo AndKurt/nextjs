@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, useRef, useState } from "react";
 
 import { VideoButton } from "@/components/core";

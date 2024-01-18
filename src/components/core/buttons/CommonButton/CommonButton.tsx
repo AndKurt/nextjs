@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC } from "react";
+import React, { ButtonHTMLAttributes, FC } from "react";
 
 import { TProps } from "./types";
 import { sesColorClassName } from "./utils";
@@ -9,7 +9,7 @@ import cn from "./styles.module.scss";
 
 import clsx from "clsx";
 
-export const CommonButton: FC<TProps> = ({
+export const CommonButton: FC<TProps & ButtonHTMLAttributes<HTMLButtonElement>> = ({
     text,
     onClick,
     link,
@@ -18,6 +18,7 @@ export const CommonButton: FC<TProps> = ({
     sidePadding = 23,
     className,
     type = "button",
+    ...props
 }) => {
     const colorClassName = sesColorClassName(color);
     const buttonClasses = clsx(colorClassName, cn.commonButton, className);
@@ -28,6 +29,7 @@ export const CommonButton: FC<TProps> = ({
             style={{ paddingLeft: `${sidePadding}px`, paddingRight: `${sidePadding}px` }}
             type={type}
             onClick={onClick}
+            {...props}
         >
             {text}
             {rightAddon && (

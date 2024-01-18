@@ -18,7 +18,7 @@ export const Footer = () => {
             <div className={cn.wrapper}>
                 <div className={clsx(cn.section, cn.firstSection)}>
                     <SocialsContainer />
-                    <SubscribeContainer />
+                    <SubscribeContainer></SubscribeContainer>
                 </div>
                 <div className={clsx(cn.section, cn.secondSection)}>
                     <FastLinksContainer />

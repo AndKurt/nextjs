@@ -40,5 +40,3 @@ export const ContactsContainer = () => {
         </section>
     );
 };
-//123 456 7890
-//support@example.com

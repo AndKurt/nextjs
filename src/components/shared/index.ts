@@ -6,7 +6,6 @@ export * from "./SectionTitle";
 export * from "./cards";
 export * from "./sections";
 export * from "./SliderReviewText";
-export * from "./Slider";
 export * from "./VideoPlayer";
 export * from "./NotFoundBanner";
 export * from "./PageTitle";

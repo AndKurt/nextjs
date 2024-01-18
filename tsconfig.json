@@ -15,8 +15,8 @@
         "incremental": true,
         "plugins": [
             {
-                "name": "next"
-            }
+                "name": "next",
+            },
         ],
         "paths": {
             "@/*": ["./src/*"],
@@ -26,9 +26,11 @@
             "@hooks/*": ["./src/hooks/*"],
             "@public": ["./public"],
             "@public/*": ["./public/*"],
-            "@utils": ["./utils"]
-        }
+            "@utils": ["./utils"],
+            "@lib": ["./lib"],
+            "@emails": ["./emails"],
+        },
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "assets-env.d.ts"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules"],
 }
